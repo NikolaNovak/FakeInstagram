@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram (or is it?)</title>
+    <link rel="stylesheet" href="styles/all.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="icon" href="images/icon.png">
+
+    <template id="post-template">
+      <div class="post">
+        <div class="post-user">
+          <img src="images/novak.jpg" class="user-img" alt="post-user-photo"/>
+          <div class="user-info">
+            <b class="full-name">Nikola Novak</b>
+            <p class="user-location">Solin, Croatia</p>
+          </div>
+        </div>
+        <div class="post-photo">
+          <img src="images/default.jpg" alt="post-photo"/>
+        </div>
+        <div class="post-bottom">
+          <div class="post-icons">
+            <div class="left-icons">
+              <i class="far fa-heart heart-icon"></i>
+              <i class="far fa-comment-dots comment-icon"></i>
+              <i class="fas fa-share-alt share-icon"></i>
+            </div>
+            <div class="right-icon">
+              <i class="far fa-bookmark bookmark-icon"></i>
+            </div>
+              </div>
+          <div class="post-likes-comments">
+            <p>Liked by <span class="like-number">0</span> users.</p>
+            <p class="tags link"></p>
+            <div class="comments">
+              <p class="no-comment-border"><b></b></p>
+            </div>
+            <input class="add-comment" placeholder="Add a comment..." />
+          </div>
+        </div>  
+      </div>
+    </template>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+         <img id="logo-img" src="images/instalogo.png" alt="insta-logo-photo" />
+         <img id="logo-text" src="images/instatext.png" alt="insta-text-photo" >
+       </div>
+       <div class="search-container">
+         <i class="fas fa-search"></i>
+        <input type="text" id="search-box" placeholder="Search"/>
+      </div>
+      <div class="user-icon-container">
+        <i class="far fa-heart heart-icon" id="header-heart-icon"></i>
+        <i class="fas fa-user-tie user-icon" id="header-user-icon"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-feed">
+        <button id="add-new-post-button"><i class="fas fa-plus-circle"></i></button>
+        <div class="post-container">
+
+          <div class="post">
+            <div class="post-user">
+              <img src="images/musk.png" class="user-img" alt="musk-photo"/>
+              <div class="user-info">
+                <b class="full-name">Elon Musk</b>
+                <p class="user-location">Earth</p>
+              </div>
+            </div>
+            <div class="post-photo">
+              <img src="images/spacex.png" alt="spacex-photo"/>
+            </div>
+            <div class="post-bottom">
+              <div class="post-icons">
+                 <div class="left-icons">
+                  <i class="far fa-heart heart-icon"></i>
+                  <i class="far fa-comment-dots comment-icon"></i>
+                  <i class="fas fa-share-alt share-icon"></i>
+                </div>
+                <div class="right-icon">
+                  <i class="far fa-bookmark bookmark-icon"></i>
+                </div>
+              </div>
+              <div class="post-likes-comments">
+                <p>Liked by <span class="like-number">161803</span> users.</p>
+                <p class="tags link">#spacex #tesla #davidbowie #spaceoddity</p>
+                <div class="comments">
+                  <p class="first-comment"><b>NASA</b> The absolute madman.</p>
+                </div>
+                <input class="add-comment" placeholder="Add a comment..." />
+              </div>
+            </div>  
+          </div>
+
+          <div class="user-suggestions">
+            <p>Suggestions for you:</p>
+            <div class="suggestion-box">
+              <div class="user-card first-user">
+                <img src="images/nasa.png" class="user-profile-img" alt="nasa-photo"/>
+                  <i class="fas fa-times delete-icon"></i>
+                  <p><b>NASA</b></p>
+                  <button class="follow">Follow</button>
+                </div>
+                <div class="user-card second-user">
+                  <img src="images/binary.png" class="user-profile-img" alt="binary-photo"/>
+                  <i class="fas fa-times delete-icon"></i>
+                  <p><b>00010011</b></p>
+                  <button class="follow">Follow</button>
+                </div>
+                <div class="user-card third-user">
+                  <img src="images/doge.png" class="user-profile-img" alt="doge-photo"/>
+                  <i class="fas fa-times delete-icon"></i>
+                  <p><b>Doge</b></p>
+                  <button class="follow">Follow</button>
+                </div>
+              </div>
+            </div>
+
+          <div class="post">
+              <div class="post-user">
+                <img src="images/trump.png" class="user-img" alt="trump-photo"/>
+                <div class="user-info">
+                  <b class="full-name">Donald Trump</b>
+                  <p class="user-location">Washington, D.C.</p>
+                </div>
+              </div>
+              <div class="post-photo">
+                <img src="images/wall.jpg" alt="wall-photo"/>
+              </div>
+              <div class="post-bottom">
+                <div class="post-icons">
+                   <div class="left-icons">
+                    <i class="far fa-heart heart-icon"></i>
+                    <i class="far fa-comment-dots comment-icon"></i>
+                    <i class="fas fa-share-alt share-icon"></i>
+                  </div>
+                  <div class="right-icon">
+                    <i class="far fa-bookmark bookmark-icon"></i>
+                  </div>
+                </div>
+                <div class="post-likes-comments">
+                  <p>Liked by <span class="like-number">0</span> users.</p>
+                  <p class="tags link">#wall #usa #mexico #makeAmericaGreatAgain</p>
+                  <div class="comments">
+                    <p class="first-comment"><b>Mexico</b> Who's gonna pay for the wall?</p>
+                    <p class="second-comment"><b>Donald Trump</b> You.</p>
+                  </div>
+                  <input class="add-comment" placeholder="Add a comment..." />
+                </div>
+              </div>  
+            </div>
+
+        </div>
+      </div>
+
+      <div class="personal-space">
+        <div class="current-user-info">
+          <img src="images/novak.jpg" class="user-img" alt="novak-photo"/>
+          <div class="user-info">
+            <b class="username">nikola.novakk</b>
+            <p class="full-name">Nikola Novak</p>
+          </div>
+        </div>
+        <div class="about-me-box">
+          <p>About me:</p>
+          <p><i class="fas fa-user-circle user-icon"></i> - <span id="followers">117</span></p>
+          <p><i class="fas fa-heart heart-icon"></i> - <span id="your-likes">2552</span></p>
+          <p><i class="far fa-bookmark bookmark-icon"></i> - <span id="bookmarks">3008</span></p>    
+        </div>
+        <div class="right-suggestion-box">
+          <p>We suggest:</p>
+           <div class="suggestion first-user">
+              <div class="user-photo-name">
+                <img src="images/nasa.png" class="user-profile-img" alt="suggestion-photo"/>
+                <p class="user">NASA</p>
+              </div>
+              <button class="follow-v2">Follow</button>
+            </div>
+            <div class="suggestion second-user">
+              <div class="user-photo-name">
+                <img src="images/binary.png" class="user-profile-img" alt="suggestion-photo"/>
+                <p class="user">00010011</p>
+              </div>
+              <button class="follow-v2">Follow</button>
+            </div>
+            <div class="suggestion third-user">
+              <div class="user-photo-name">
+                <img src="images/doge.png" class="user-profile-img" alt="suggestion-photo"/>
+                <p class="user">Doge</p>
+              </div>
+              <button class="follow-v2">Follow</button>
+            </div>
+          </div>
+
+        <div class="right-footer">
+          <p>© Nikola Novak 2018</p>
+        </div>
+      </div>
+      
+    </main>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
